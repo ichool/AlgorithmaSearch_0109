@@ -34,6 +34,24 @@ void LinearSearch()
     int ctr; // Number of comparisons
     int item;
 
+    do
+    {
+        // Accept the number to be searched
+        cout << "\nEnter the element you want to search: ";
+        cin >> item;
+
+        ctr = 0;
+        i = 0;          // step 2 
+        while (i < n)    // step 3
+        {
+            ctr++;
+            if (arr[i] == item)
+            {
+                cout << "\n" << item << " found at position" << (i + 1) << endl;
+                break;
+            }
+            i++; // step 4
+        }
 
 
 int main()
